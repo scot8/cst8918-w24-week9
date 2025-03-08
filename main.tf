@@ -16,16 +16,16 @@ terraform {
 }
 
 # Define providers and their config params
-provider "azurerm" 
+provider "azurerm" {
   # Leave the features block empty to accept all defaults
   features {}
-
+}
 
 # Define the resource group
-resource "azurerm_resource_group" "rg" {
+resource "azurerm_resource_group" "rg" 
   name     = "example-rg"
   location = "westus3"
-}
+
 
 # Define the storage account
 resource "azurerm_storage_account" "storage" {
