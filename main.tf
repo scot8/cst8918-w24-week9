@@ -22,10 +22,10 @@ provider "azurerm" {
 }
 
 # Define the resource group
-resource "azurerm_resource_group" "rg" 
+resource "azurerm_resource_group" "rg" {
   name     = "example-rg"
   location = "westus3"
-
+}
 
 # Define the storage account
 resource "azurerm_storage_account" "storage" {
