@@ -27,7 +27,7 @@ resource "azurerm_resource_group" "rg" {
   location = "canadacentral"
 }
 
-# Define the storage account
+# Define the storage account, jkkk
 resource "azurerm_storage_account" "storage" {
   name                     = "examplestoracc7890"
   resource_group_name      = azurerm_resource_group.rg.name
@@ -35,3 +35,8 @@ resource "azurerm_storage_account" "storage" {
   account_tier             = "Standard"
   account_replication_type = "LRS"
 }
+
+
+
+
+
