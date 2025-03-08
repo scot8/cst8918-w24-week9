@@ -24,7 +24,7 @@ provider "azurerm" {
 # Define the resource group
 resource "azurerm_resource_group" "rg" {
   name     = "example-rg"
-  location = "westus3"
+  location = "canadacentral"
 }
 
 # Define the storage account
